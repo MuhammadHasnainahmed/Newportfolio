@@ -16,108 +16,108 @@ console.log(client);
 
 let landingprojects = [
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project1",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "/parallax.png",
+        title: "Parallax Scrolling Website",
+        description:"A visually engaging parallax scrolling website showcasing modern web design techniques.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+           
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://past-lizards.surge.sh/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-css-7"
         }
     },
 
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project2",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "publishingcompany.png",
+        title: "Publishing Company Website",
+        description:"A small river named Duden flows by their place and supplies it with the necessary regelialia.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+            
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://muhammadhasnainahmed.github.io/SMIT--assign-css-5/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-css-5"
         }
     },
 
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project3",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "nitrocompany.png",
+        title: "Nitro Company Website",
+        description:"A responsive website for a tech company, highlighting services and portfolio with modern design.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+            3:"Bootstrap"
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://muhammadhasnainahmed.github.io/SMIT--assign-bootstap-1/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-bootstap-1"
         }
     },
     
 
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project4",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "todolist.png",
+        title: "To-Do List App Basics",
+        description:"A simple and intuitive to-do list application to help users manage their tasks effectively.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+            3:"JavaScript"
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://muhammadhasnainahmed.github.io/SMIT--assign-js-14-To-Do-List/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-js-14-To-Do-List"
         }
     },
 
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project5",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "studentmarksmanagenment.png",
+        title: "Student Marks Management System",
+        description:"A web application to manage and track student marks and performance efficiently.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+            3:"JavaScript"
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://muhammadhasnainahmed.github.io/SMIT--assign-js-15-Student-Marks-Management-System/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-js-15-Student-Marks-Management-System"
         }
     },
 
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project6",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "googleclassroom.png",
+        title: "Google Classroom Clone With Local Storage",
+        description:"A functional clone of Google Classroom with features like class creation, assignments, and announcements.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+            3:"JavaScript"
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://muhammadhasnainahmed.github.io/SMIT--assign-js-23-Google-ClassRoom/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-js-23-Google-ClassRoom"
         }
     },
 
     {
-        image: "https://placehold.co/600x400/6366f1/ffffff?text=Tailwind+Project",
-        title: "Tailwind CSS Project7",
-        description:"A modern website built with Tailwind CSS featuring responsive design and smooth animations.",
+        image: "boxshadow.png",
+        title: "Box Shadow Generator",
+        description:"A user-friendly tool for creating visually appealing box shadows with customizable options.",
         projecttech:{
             1:"HTML",
             2:"CSS",
-            3:"Tailwind CSS"
+            3:"JavaScript"
         },
         projectlinks:{
-            live:"https://example.com/tailwind-project",
-            github:"https://github.com/yourusername/tailwind-project"
+            live:"https://muhammadhasnainahmed.github.io/SMIT--assign-js-24-Box-Shadow-Generator/",
+            github:"https://github.com/MuhammadHasnainahmed/SMIT--assign-js-24-Box-Shadow-Generator"
         }
     },
 
@@ -311,18 +311,3 @@ if (contactForm) {
 
 }
 
-// -------------dark mode--------------------------
-
- const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = themeToggle.querySelector('i');
-        
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            if (document.body.classList.contains('dark-mode')) {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
-        });
