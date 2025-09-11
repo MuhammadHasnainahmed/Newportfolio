@@ -180,6 +180,21 @@ header {
   cursor: pointer;
 }
 
+.mobile-menu{
+  /* display: flex; */
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  background: var(--lighter);
+  box-shadow: var(--shadow);
+  border-bottom: 9px solid var(--primary);
+  border-radius: 10px;
+  /* top: 70px; */
+  display: none;
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;

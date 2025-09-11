@@ -311,3 +311,54 @@ if (contactForm) {
 
 }
 
+
+
+// -------------mobile nav--------------------------
+
+let hamburger = document.getElementById('hamburger');
+let mobilemenu = document.getElementById('mobile-menu');
+let close = document.getElementById('close');
+
+
+if (hamburger) {
+    hamburger.addEventListener('click', () =>{
+        mobilemenu.style.display = mobilemenu.style.display === 'flex' ? 'none' : 'flex';
+      close.style.display = close.style.display === 'block' ? 'none' : 'block';
+      hamburger.style.display="none";
+    //   hamburger.style.display = hamburger.style.display === 'none' ? 'block' : 'none';
+    })
+}
+
+if (close) {
+
+    close.addEventListener('click', () =>{
+        mobilemenu.style.display = mobilemenu.style.display === 'flex' ? 'none' : 'flex';
+      close.style.display = close.style.display === 'block' ? 'none' : 'block';
+      hamburger.style.display="block";
+    //   close.style.display = close.style.display === 'block' ? 'none' : 'block';
+    })
+}
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      if (entry.target.classList.contains('hero')) {
+        entry.target.classList.add('animate__fadeInDown');
+      }
+      if (entry.target.classList.contains('about')) {
+        entry.target.classList.add('animate__fadeInLeft');
+      }
+      if (entry.target.classList.contains('projects')) {
+        entry.target.classList.add('animate__zoomIn');
+      }
+      if (entry.target.classList.contains('contact')) {
+        entry.target.classList.add('animate__fadeInRight');
+      }
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.animate__animated').forEach(el => observer.observe(el));
+

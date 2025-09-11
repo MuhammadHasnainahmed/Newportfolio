@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
     <!-- Header -->
@@ -22,32 +24,43 @@
             </ul>
             <div class="nav-icons">
                 
-                <div class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
+                <div class="hamburger" >
+                    <i id="hamburger" class="fas fa-bars"></i>
+                    <i id="close" class="fas fa-times" style="display: none;"></i>
                 </div>
+                   
             </div>
         </div>
+
+         <div id="mobile-menu" class="mobile-menu">
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Services</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+
+
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
+    <section class="hero animate__animated" id="home">
+        <div class="container hero-content ">
             <div class="hero-text">
-                <h1>Frontend Developer <span>From Pakistan</span></h1>
-                <p>I create responsive, modern, and user-friendly web experiences with a focus on performance and accessibility.</p>
+                <h1 class="animate__animated  animate__bounceInDown">Frontend Developer <span>From Pakistan</span></h1>
+                <p class="animate__animated  animate__bounceInUp ">I create responsive, modern, and user-friendly web experiences with a focus on performance and accessibility.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image animate__animated animate__bounceInRight">
                 <img src="hero.png" alt="Hasnain">
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section about" id="about">
+    <section class="section about animate__animated" id="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
@@ -68,17 +81,17 @@
     <section class="section skills" id="skills">
         <div class="container">
             <h2 class="section-title">My Skills</h2>
-            <div class="skills-container">
+            <div class="skills-container ">
                 <!-- work on javascript -->
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="section projects" id="projects">
+    <section class="section projects animate__animated" id="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
+            <div class="projects-grid animate__animated ">
                  
                 <!-- work on javascript -->
             
@@ -98,7 +111,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact" id="contact">
+    <section class="section contact animate__animated" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
@@ -152,7 +165,13 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+   
 
+  
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/09/11/19/20250911191604-6F0BPCSG.js" defer></script>
+    
     <script src="app.js"></script>
 </body>
 </html>
